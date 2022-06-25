@@ -128,7 +128,8 @@ public class InteractListener implements Listener {
 				return;
 		}
 
-		if(block.getBlock().getType() != Material.AIR)
+		Material blockType = block.getBlock().getType();
+		if(blockType != Material.AIR && blockType != Material.WATER && blockType != Material.LAVA)
 			return;
 
 		// Place block

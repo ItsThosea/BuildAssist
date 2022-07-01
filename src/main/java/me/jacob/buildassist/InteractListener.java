@@ -104,7 +104,7 @@ public class InteractListener implements Listener {
 				loc.getBlockX(), loc.getBlockY() - 1,
 				loc.getBlockZ());
 
-		if(block.getBlock().getType() == Material.AIR)
+		if(!block.getBlock().getType().isSolid())
 			return;
 		if(loc.getPitch() < 42)
 			return;

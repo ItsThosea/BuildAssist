@@ -1,0 +1,7 @@
+name: BuildAssist
+version: '${version}'
+main: me.thosea.buildassist.BuildAssist
+api-version: 1.13
+depend: [ProtocolLib]
+author: Thosea
+description: Lets you Bedrock Bridge on Java Edition!
